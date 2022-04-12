@@ -19,7 +19,7 @@ public class Connexion {
         try
         {
             Class.forName("org.postgresql.Driver");
-            con = DriverManager.getConnection("jdbc:postgresql://localhost:5432/heroku","postgres","tantely10");
+            con = DriverManager.getConnection("jdbc:postgresql://ec2-63-32-248-14.eu-west-1.compute.amazonaws.com:5432/de491rhrke04bb","etooqettshrwfl","f2f7a63f8b216378c842e04f07af3417150aa8495db5ab0f82dc8606691cd897");
             System.out.println("hello world");
         }
         catch (Exception e1)
