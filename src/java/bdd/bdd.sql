@@ -1,14 +1,3 @@
-/*drop table recette;
-drop table AchatIngredient;
-drop table ingredient;
-drop table Produit;
-drop table Categorie;
-drop table marge;
-drop table DetailsCommande
-drop table Commande
-drop table Serveur
-drop table NTable
-
 create table Categorie(
     id_categorie Serial PRIMARY KEY,
     nom_categorie varchar(50)
@@ -78,28 +67,6 @@ INSERT INTO Ingredient(nom) VALUES('Persil');
 INSERT INTO Ingredient(nom) VALUES('Poivre');
 INSERT INTO Ingredient(nom) VALUES('Vinaigre');
 INSERT INTO Ingredient(nom) VALUES('MaÏs doux');
-INSERT INTO Ingredient(nom) VALUES('Sardine');
-
-create table AchatIngredient(
-    id_achat Serial PRIMARY KEY,
-    prix_unitaire double precision,
-    dateAchat Date,
-    id_ingredient int,
-    quantite int,
-    FOREIGN KEY (id_ingredient) REFERENCES Ingredient(id_ingredient)
-);
-
-INSERT INTO AchatIngredient(prix_unitaire,dateAchat,id_ingredient,quantite)VALUES(5000,'2022-03-22',1,1000);
-INSERT INTO AchatIngredient(prix_unitaire,dateAchat,id_ingredient,quantite)VALUES(16000,'2022-03-22',2,1000);
-INSERT INTO AchatIngredient(prix_unitaire,dateAchat,id_ingredient,quantite)VALUES(4500,'2022-03-22',3,1000);
-INSERT INTO AchatIngredient(prix_unitaire,dateAchat,id_ingredient,quantite)VALUES(3000,'2022-03-22',5,1000);
-INSERT INTO AchatIngredient(prix_unitaire,dateAchat,id_ingredient,quantite)VALUES(16000,'2022-03-22',6,1000);
-
-INSERT INTO AchatIngredient(prix_unitaire,dateAchat,id_ingredient,quantite)VALUES(2000,'2022-03-22',7,1000);
-INSERT INTO AchatIngredient(prix_unitaire,dateAchat,id_ingredient,quantite)VALUES(15000,'2022-03-22',8,1000);
-INSERT INTO AchatIngredient(prix_unitaire,dateAchat,id_ingredient,quantite)VALUES(5000,'2022-03-22',9,1000);
-INSERT INTO AchatIngredient(prix_unitaire,dateAchat,id_ingredient,quantite)VALUES(3000,'2022-03-22',10,1000);
-INSERT INTO AchatIngredient(prix_unitaire,dateAchat,id_ingredient,quantite)VALUES(15000,'2022-03-22',11,1000);
 
 create table Marge(
     id_marge Serial PRIMARY KEY,
